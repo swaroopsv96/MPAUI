@@ -18,6 +18,6 @@ export class EmployeeService {
   }
 
   addEmployee(employee: Employee){
-    return this.http.post<Employee>('/api/employees',employee);
+    return this.http.post<Employee>('/api/employees/',employee);
   }
 }

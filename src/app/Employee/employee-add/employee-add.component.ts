@@ -11,7 +11,6 @@ import { Employee } from '../Employee';
 
 export class EmployeeAddComponent {
   employee : Employee = {
-    id: '',
     employee_name: '',
     employee_salary: '',
     employee_age: 0

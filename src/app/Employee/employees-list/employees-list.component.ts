@@ -15,11 +15,12 @@ import { EmployeeService } from 'src/app/services/employee-operations/employee.s
 export class EmployeesListComponent {
   constructor(private employeeService:EmployeeService){}
   employeeList:Employee[] = [];
-  displayedColumns: string[] = ['id', 'name', 'salary', 'age'];
+  displayedColumns: string[] = ['id', 'employee_name', 'employee_salary', 'employee_age'];
 
   ngOnInit(){
     this.employeeService.getEmployee().subscribe(employees => {
       this.employeeList = employees;
+      console.log(employees);
     });
   }
 }
