@@ -13,8 +13,8 @@ export class EmployeeService {
     return this.http.get<Employee[]>('/api/employees/sort_by_salary');
   }
   
-  getEmployeeId(){
-    return this.http.get<Employee>('');
+  getEmployeeById(employeeId:number){
+    return this.http.get<Employee>(`/api/employee/${employeeId}/`);
   }
 
   addEmployee(employee: Employee){
