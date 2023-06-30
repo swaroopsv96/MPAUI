@@ -23,5 +23,6 @@ export class EmployeeAddComponent {
   AddEmployee(employeeForm:NgForm){
     this.emplpoyeeService.addEmployee(this.employee).subscribe();
     employeeForm.reset();
+    alert("Employee added")
   }
 }
