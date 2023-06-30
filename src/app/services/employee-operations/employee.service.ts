@@ -14,7 +14,7 @@ export class EmployeeService {
   }
   
   getEmployeeById(employeeId:number){
-    return this.http.get<Employee>(`/api/employee/${employeeId}/`);
+    return this.http.get<Employee>(`/api/employees/${employeeId}/`);
   }
 
   addEmployee(employee: Employee){

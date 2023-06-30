@@ -23,7 +23,7 @@ export class EmployeeComponent {
   getDetails():void{
     this.emplpoyeeService.getEmployeeById(this.employee_id).subscribe(employee => {
       this.employee = employee;
-      
+      console.log(employee);
     });
   }
 }
